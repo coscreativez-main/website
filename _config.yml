@@ -1,0 +1,20 @@
+# Site Settings
+title: COS Creatives
+email: karthick@coscreatives.in
+description: Digital Marketing & Content Marketing Agency in Madurai.
+url: "https://www.coscreatives.in" # Your domain
+baseurl: "" # Leave this empty
+
+# Build Settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude these from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
