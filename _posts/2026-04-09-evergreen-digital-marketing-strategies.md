@@ -1,3 +1,9 @@
+---
+layout: default
+title: The Ultimate Guide to Evergreen Digital Marketing Strategies
+description: Stop chasing temporary trends. Learn the core evergreen strategies—from Entity-based SEO to AEO—that drive consistent, long-term traffic to your brand.
+---
+
 # The Ultimate Guide to Evergreen Digital Marketing Strategies That Drive Consistent Traffic
 
 In today’s fast-changing online landscape, businesses often chase trends—but the smartest brands invest in **evergreen digital marketing strategies** that consistently generate traffic, leads, and revenue over time.
