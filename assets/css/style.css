@@ -738,6 +738,71 @@ body {
     color: #111;
 }
 
+@media (max-width: 768px) {
+
+    .form-section {
+        padding: 25px 20px;
+        max-width: 90%;
+        max-height: 85vh;
+        border-radius: 10px;
+    }
+
+    .form-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .stats-btn {
+        font-size: 0.9rem;
+        padding: 9px 16px;
+    }
+
+    .form-close {
+        font-size: 1.5rem;
+        right: 15px;
+        top: 10px;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+
+    .form-section {
+        padding: 20px 15px;
+        max-width: 95%;
+        max-height: 90vh;
+        border-radius: 8px;
+    }
+
+    .form-section h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .stats-btn {
+        width: 100%; /* full width button */
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+    .form-close {
+        font-size: 1.3rem;
+        right: 12px;
+        top: 8px;
+    }
+}
+
+/* Large screens (optional enhancement) */
+@media (min-width: 1200px) {
+
+    .form-section {
+        max-width: 1000px;
+        padding: 50px 40px;
+    }
+
+    .form-section h2 {
+        font-size: 2rem;
+    }
+}
 
 /* Footer section */
 .footer {
