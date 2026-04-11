@@ -658,6 +658,8 @@ body {
 .stat span {
     font-size: 0.9rem;
     color: #1b1b1b;
+    margin: 4px 6px 20px 6px;
+    line-height: 1.6;
 }
 
 /* Responsive */
