@@ -659,17 +659,6 @@ body {
     color: #1b1b1b;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .content h2 {
-        font-size: 1.6rem;
-    }
-
-    .stats {
-        flex-direction: column;
-    }
-}
-
 /* Forms */
 
 .stats-btn {
@@ -738,72 +727,124 @@ body {
     color: #111;
 }
 
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content h2 {
+        font-size: 1.7rem;
+    }
+
+    .stat {
+        min-height: auto;
+    }
+}
+
+/* =========================
+   Mobile (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+    .experience-section {
+        padding: 40px 15px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+
+    .stats {
+        grid-template-columns: 1fr; /* ✅ stack cards */
+    }
+
+    .stat {
+        padding: 18px;
+    }
+
+    .stat h3 {
+        font-size: 1.1rem;
+    }
+
+    .stat span {
+        font-size: 0.9rem;
+    }
+
+    .stats-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================
+   Small Mobile (≤ 480px)
+   ========================= */
+@media (max-width: 480px) {
+
+    .content h2 {
+        font-size: 1.3rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
+    }
+
+    .stat {
+        padding: 15px;
+    }
+
+    .stats-btn {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+}
+
+/* =========================
+   Form Responsiveness
+   ========================= */
+
 @media (max-width: 768px) {
 
     .form-section {
-        padding: 25px 20px;
-        max-width: 90%;
-        max-height: 85vh;
+        max-width: 95%;
+        padding: 25px 15px;
         border-radius: 10px;
     }
 
     .form-section h2 {
-        font-size: 1.5rem;
-    }
-
-    .stats-btn {
-        font-size: 0.9rem;
-        padding: 9px 16px;
+        font-size: 1.4rem;
     }
 
     .form-close {
         font-size: 1.5rem;
-        right: 15px;
+        right: 12px;
         top: 10px;
     }
 }
 
-/* Mobile (max-width: 480px) */
 @media (max-width: 480px) {
 
     .form-section {
-        padding: 20px 15px;
-        max-width: 95%;
-        max-height: 90vh;
-        border-radius: 8px;
+        padding: 20px 12px;
     }
 
     .form-section h2 {
-        font-size: 1.3rem;
-        margin-bottom: 15px;
-    }
-
-    .stats-btn {
-        width: 100%; /* full width button */
-        font-size: 0.85rem;
-        padding: 10px;
+        font-size: 1.2rem;
     }
 
     .form-close {
         font-size: 1.3rem;
-        right: 12px;
-        top: 8px;
     }
 }
-
-/* Large screens (optional enhancement) */
-@media (min-width: 1200px) {
-
-    .form-section {
-        max-width: 1000px;
-        padding: 50px 40px;
-    }
-
-    .form-section h2 {
-        font-size: 2rem;
-    }
-}
-
 /* Footer section */
 .footer {
     background: #111;
