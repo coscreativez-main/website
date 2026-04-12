@@ -90,6 +90,7 @@ body {
     }
 
     .nav {
+        display: none;
         position: absolute;
         top: 70px;
         left: 0;
@@ -99,8 +100,9 @@ body {
         align-items: center;
         gap: 16px;
         padding: 20px 0;
-
-        /* Hidden by default */
+        border-bottom: 1px solid #eee;
+        
+       /* Animation properties */
         opacity: 0;
         pointer-events: none;
         transform: translateY(-10px);
@@ -108,6 +110,7 @@ body {
     }
 
     .nav.active {
+        display: flex;
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
