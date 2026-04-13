@@ -16,6 +16,10 @@ If your goal is to build a **sustainable online presence**, rank higher on searc
 
 **Evergreen digital marketing** refers to strategies and content that remain relevant and valuable over a long period. Unlike trend-based campaigns, evergreen tactics continue to drive **organic traffic**, improve **SEO rankings**, and support long-term growth.
 
+
+{% include cta-seo-guide.html %}
+
+
 ### Examples of evergreen digital marketing:
 - Search engine optimization (SEO)
 - Content marketing
