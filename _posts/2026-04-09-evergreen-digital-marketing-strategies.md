@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blogpost
 title: The Ultimate Guide to Evergreen Digital Marketing Strategies
 description: Stop chasing temporary trends. Learn the core evergreen strategies—from Entity-based SEO to AEO—that drive consistent, long-term traffic to your brand.
 ---
