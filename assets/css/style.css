@@ -924,3 +924,118 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Blog section */
+/* Blog Archive Styling */
+.blog-archive {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 24px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.post-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.post-card h2 a {
+    color: #1b1b1b;
+    text-decoration: none;
+}
+
+.post-card h2 a:hover {
+    color: #007bff;
+    /* Or your brand color */
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.post-excerpt {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.read-more {
+    font-weight: 600;
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block;
+}
+/* Responsive Images inside Blog Posts */
+.post-content img,
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+.post-card {
+    height: 100%; /* Makes all cards in a row the same height */
+    /* ... your other styles ... */
+}
+
+/* Responsive adjustments for the Blog Grid */
+@media (max-width: 992px) {
+    .post-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns for tablets */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .post-list {
+        grid-template-columns: 1fr;
+        /* 1 column for mobile phones */
+    }
+
+    .blog-archive h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .post-card {
+        padding: 20px;
+        /* Slightly less padding on mobile to save space */
+    }
+
+    .post-card h2 {
+        font-size: 1.25rem;
+    }
+}
+
