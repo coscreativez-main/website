@@ -1102,3 +1102,83 @@ article img {
         font-size: 1.5rem;
     }
 }
+/* Blog-CTA Box */
+/* 1. THE FOUNDATION: Layout for every CTA box */
+.blog-cta {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 8px;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.blog-cta:hover {
+    transform: scale(1.01);
+    /* Subtle lift for interaction */
+}
+
+/* 2. THE THEMES: Only change colors here */
+.cta-orange {
+    border: 3px solid #ff4500;
+    background: #fffbf5;
+}
+
+.cta-blue {
+    border: 3px solid #007bff;
+    background: #f0f7ff;
+}
+
+.cta-green {
+    border: 3px solid #28a745;
+    background: #f2fff5;
+}
+
+/* 3. INTERNAL ELEMENTS: Shared by all CTAs */
+.cta-image img {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.cta-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 15px 0 !important;
+}
+
+.cta-icon {
+    color: inherit;
+    /* Takes color from the border/text */
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.btn-secondary {
+    margin-left: 15px;
+    color: #333;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.btn-secondary:hover {
+    color: #ff4500;
+    /* Changes to orange on hover */
+}
+
+/* 4. RESPONSIVE: Stacks vertically on mobile */
+@media (max-width: 768px) {
+    .blog-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cta-features {
+        grid-template-columns: 1fr;
+    }
+}
