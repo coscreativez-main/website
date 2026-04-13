@@ -65,6 +65,18 @@
     </header>
 
     {{ content }}
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('.nav');
 
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function() {
+                    // This adds or removes the 'active' class when you click
+                    nav.classList.toggle('active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
