@@ -1309,8 +1309,8 @@ article img {
 
 /* ABOUT SECTION */
 .about-section {
-  background:  #457374;;
-  color: #ffffff;
+  background:  #ffffff;
+  color: #000000;
   padding: 60px 20px;
   font-family: 'Poppins', sans-serif;
 }
