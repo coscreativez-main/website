@@ -2,32 +2,50 @@
 <html lang="en">
 
 <head>
+    <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ page.title }}</title>
-    <meta name="description" content="{{ page.description }}">
+    <!-- Primary SEO -->
+    <title>COS Creatives | Digital Marketing & Content Marketing Agency in Madurai</title>
+    <meta name="description"
+        content="COS Creatives is a digital marketing and content marketing agency based in Madurai, helping startups, SMEs, and global brands grow with strategic content and performance marketing.">
 
+    <!-- Keywords (optional but fine) -->
     <meta name="keywords"
         content="digital marketing Madurai, content marketing India, SEO services, social media marketing, startup marketing India">
-    <meta name="author" content="COS Creatives">
+
+    <!-- Author -->
+    <meta name="Bharath" content="COS Creatives">
+
+    <!-- Robots -->
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://www.coscreatives.in{{ page.url }}">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.coscreatives.in/">
 
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.description }}">
+    <!-- Open Graph (Social SEO) -->
+    <meta property="og:title" content="COS Creatives | Digital Marketing Agency">
+    <meta property="og:description"
+        content="Helping brands grow with data-driven digital and content marketing strategies.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.coscreatives.in{{ page.url }}">
+    <!-- update -->
+    <meta property="og:url" content="https://www.coscreatives.in/">
     <meta property="og:image" content="https://www.coscreatives.in/assets/og-image.jpg">
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" href="/assets/icons/favicon.ico.png" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="preload" href="/assets/css/style.css" as="style">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Preload (Performance) -->
+    <link rel="preload" href="assets/css/style.css" as="style">
+
+    <!-- Schema (Basic Organization) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -48,6 +66,7 @@
 
 <body>
 
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">COS Creatives</div>
@@ -59,6 +78,7 @@
                 <a href="/blog">Blog</a>
             </nav>
 
+            <!-- Mobile Toggle -->
             <div class="menu-toggle">
                 <span></span>
                 <span></span>
@@ -114,7 +134,22 @@
         </div>
     </footer>
 
-   <script>
+
+    <div id="blogModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeBlogPopup()">&times;</span>
+            <div id="modalBody">
+                <script src="https://js-na2.hsforms.net/forms/embed/244392962.js" defer></script>
+                <div class="hs-form-frame" 
+                     data-region="na2" 
+                     data-form-id="05ad4a72-69a3-4558-abe4-c9fbbcb507c0"
+                     data-portal-id="244392962">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
         // Hamburger Menu Logic
         document.addEventListener('DOMContentLoaded', function () {
             const menuToggle = document.querySelector('.menu-toggle');
