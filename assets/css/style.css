@@ -1388,7 +1388,7 @@ article img {
 
 .about-section .btn-primary {
   margin: 24px;
-    display: inline-block;
+  display: inline-block;
   background: #3A86FF;
   color: #fff;
   padding: 14px 28px;
@@ -1400,7 +1400,7 @@ article img {
 
 .about-section .btn-primary:hover {
   background: #299dc0;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* RESPONSIVE */
