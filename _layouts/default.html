@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <title>{{ page.title }}</title>
     <meta name="description" content="{{ page.description }}">
 
-    <meta name="keywords" content="digital marketing Madurai, content marketing India, SEO services, social media marketing, startup marketing India">
+    <meta name="keywords"
+        content="digital marketing Madurai, content marketing India, SEO services, social media marketing, startup marketing India">
     <meta name="author" content="COS Creatives">
     <meta name="robots" content="index, follow">
 
@@ -21,7 +23,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="icon" href="/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/assets/icons/favicon.ico.png" type="image/x-icon">
 
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="preload" href="/assets/css/style.css" as="style">
@@ -43,6 +45,7 @@
     }
     </script>
 </head>
+
 <body>
 
     <header class="header">
@@ -50,7 +53,7 @@
             <div class="logo">COS Creatives</div>
 
             <nav class="nav">
-                <a href="/">Home</a>
+                <a href="#">Home</a>
                 <a href="/about">About</a>
                 <a href="/services">Services</a>
                 <a href="/blog">Blog</a>
@@ -63,20 +66,117 @@
             </div>
         </div>
     </header>
-
+<main>
     {{ content }}
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
+</main>
+
+<!-- Footer -->
+ <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-col">
+                <h3>COS Creatives</h3>
+                <p>
+                    COS Creatives helps businesses grow with practical digital marketing, content strategies, and
+                    ready-to-use website templates designed for performance and scalability.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/digital-marketing">Digital Marketing Services</a></li>
+                    <li><a href="/content-marketing">Content Marketing Services</a></li>
+                    <li><a href="/website-templates">Website Templates</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 COS Creatives. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <div id="blogModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeBlogPopup()">&times;</span>
+            <div id="modalBody">
+                <script src="https://js-na2.hsforms.net/forms/embed/244392962.js" defer></script>
+                <div class="hs-form-frame" 
+                     data-region="na2" 
+                     data-form-id="05ad4a72-69a3-4558-abe4-c9fbbcb507c0"
+                     data-portal-id="244392962">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Hamburger Menu Logic
+        document.addEventListener('DOMContentLoaded', function () {
             const menuToggle = document.querySelector('.menu-toggle');
             const nav = document.querySelector('.nav');
 
             if (menuToggle && nav) {
-                menuToggle.addEventListener('click', function() {
-                    // This adds or removes the 'active' class when you click
+                menuToggle.addEventListener('click', function () {
                     nav.classList.toggle('active');
                 });
             }
         });
+
+        // Blog Pop-up Functions - Defined here to prevent "ReferenceError"
+        function openBlogPopup() {
+            const modal = document.getElementById('blogModal');
+            if (modal) {
+                modal.style.display = 'flex';
+                
+                // If HubSpot is already loaded, ensure it renders the form
+                if (window.hbspt) {
+                    window.hbspt.forms.create({
+                        region: "na2",
+                        portalId: "244392962",
+                        formId: "05ad4a72-69a3-4558-abe4-c9fbbcb507c0",
+                        target: ".hs-form-frame"
+                    });
+                }
+            }
+        }
+
+        function closeBlogPopup() {
+            const modal = document.getElementById('blogModal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Close on background click
+        window.onclick = function(event) {
+            const modal = document.getElementById('blogModal');
+            if (event.target == modal) {
+                closeBlogPopup();
+            }
+        }
     </script>
+
+    <script src="/assets/js/script.js"></script>
 </body>
+
 </html>
