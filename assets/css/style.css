@@ -1304,3 +1304,133 @@ article img {
         line-height: 1.6;
     }
 }
+
+/* About Page */
+
+h1 {
+    font-size: 2.25rem;
+    color: var(--primary-color);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.lead-text {
+    font-size: 1.25rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+    max-width: 800px;
+}
+
+section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* 3. Strategy & Milestones Lists */
+.strategy-list, .milestones, .services-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.strategy-list li, .milestones li, .services-summary li {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-main);
+}
+
+.strategy-list li::before, .milestones li::before, .services-summary li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* 4. The Elite Quote (EEAT Signal) */
+blockquote {
+    background: var(--bg-alt);
+    border-left: 4px solid var(--accent-color);
+    margin: 2rem 0;
+    padding: 2.5rem;
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--primary-color);
+    border-radius: 0 8px 8px 0;
+    line-height: 1.6;
+}
+
+/* 5. CTA Button */
+.cta-section {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+
+.cta-section p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 700;
+    display: inline-block;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background: #ea580c;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* 6. Responsive Adjustments */
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 2.25rem; }
+    
+    .strategy-section, .local-expertise {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+    
+    .strategy-section h2, .local-expertise h2 {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    section { padding: 5rem 0; }
+    
+    .services-summary ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
