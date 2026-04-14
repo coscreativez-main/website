@@ -1430,6 +1430,10 @@ article img {
 .services .services-hero {
   padding: 80px 0 40px;
   text-align: center;
+  background: linear-gradient(135deg,
+            #8fc4d1 0%,
+            #c9e5ec 30%,
+            #ffffff 100%);
 }
 
 .services .services-hero h1 {
@@ -1460,16 +1464,22 @@ article img {
 .services h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+        text-align: center;
+
 }
 
 .services .objective,
 .services .focus {
   font-size: 0.95rem;
   color: var(--muted);
+        text-align: center;
+
 }
 
 .services .desc {
   margin: 20px 0;
+        text-align: center;
+
 }
 
 /* Cards */
@@ -1481,7 +1491,7 @@ article img {
 }
 
 .services .card {
-  background: #fff;
+  background: #cadedc;
   padding: 20px;
   border: 1px solid #eee;
   border-radius: 8px;
@@ -1490,6 +1500,7 @@ article img {
 
 .services .card:hover {
   transform: translateY(-4px);
+      background: #e9ebeb;
 }
 
 .services .card h3 {
