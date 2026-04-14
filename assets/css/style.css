@@ -1305,132 +1305,159 @@ article img {
     }
 }
 
-/* About Page */
 
+/* --- COS Creatives: Premium Agency CSS --- */
+:root {
+    --bg-dark: #050505;
+    --card-bg: #111111;
+    --accent-gradient: linear-gradient(135deg, #ff6b6b 0%, #f97316 100%);
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+    --border-color: #27272a;
+    --glass: rgba(255, 255, 255, 0.03);
+}
+
+/* Base resets for the section */
+.cos-about-wrapper {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: 'Inter', -apple-system, sans-serif;
+    padding: 80px 20px;
+    line-height: 1.6;
+}
+
+/* SEO Title Styling */
 h1 {
-    font-size: 2.25rem;
-    color: var(--primary-color);
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.05em;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
 }
 
 .lead-text {
     font-size: 1.25rem;
-    color: var(--text-light);
-    margin-bottom: 3rem;
-    max-width: 800px;
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin-bottom: 60px;
 }
 
+/* Section Containers */
 section {
-    padding: 3rem 0;
-    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 80px;
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: 24px;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
 }
 
 h2 {
-    font-size: 1.75rem;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--text-primary);
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-/* 3. Strategy & Milestones Lists */
-.strategy-list, .milestones, .services-summary ul {
+h2::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: var(--accent-gradient);
+}
+
+/* Interactive Lists */
+ul {
     list-style: none;
     padding: 0;
 }
 
-.strategy-list li, .milestones li, .services-summary li {
-    margin-bottom: 1.25rem;
-    padding-left: 1.5rem;
-    position: relative;
-    color: var(--text-main);
+ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    transition: 0.3s;
 }
 
-.strategy-list li::before, .milestones li::before, .services-summary li::before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-    font-weight: bold;
+ul li:hover {
+    color: var(--text-primary);
+    padding-left: 10px;
 }
 
-/* 4. The Elite Quote (EEAT Signal) */
+ul li strong {
+    color: var(--text-primary);
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+/* The Quote Block */
 blockquote {
-    background: var(--bg-alt);
-    border-left: 4px solid var(--accent-color);
-    margin: 2rem 0;
-    padding: 2.5rem;
-    font-size: 1.35rem;
-    font-style: italic;
-    color: var(--primary-color);
-    border-radius: 0 8px 8px 0;
-    line-height: 1.6;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 40px 0;
+    border-top: 1px dashed var(--border-color);
+    border-bottom: 1px dashed var(--border-color);
+    margin: 60px 0;
+    color: #efefef;
+    text-align: center;
+    position: relative;
 }
 
-/* 5. CTA Button */
+/* Grid Layout for Services (AEO Optimized) */
+.services-summary ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    border: none;
+}
+
+.services-summary li {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* Elite CTA */
 .cta-section {
     text-align: center;
-    padding: 4rem 1rem;
-    background: var(--primary-color);
-    color: var(--white);
-    border-radius: 12px;
-    margin-top: 3rem;
+    background: var(--accent-gradient);
+    padding: 60px 40px;
+    border-radius: 30px;
+    border: none;
 }
 
 .cta-section p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    opacity: 0.9;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
 }
 
 .cta-button {
-    background: var(--accent-color);
-    color: var(--white);
-    padding: 1rem 2.5rem;
+    background: #000;
+    color: #fff;
+    padding: 18px 45px;
+    border-radius: 100px;
     text-decoration: none;
-    border-radius: 6px;
     font-weight: 700;
     display: inline-block;
-    transition: var(--transition);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    transition: transform 0.2s;
 }
 
 .cta-button:hover {
-    background: #ea580c;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
 }
 
-/* 6. Responsive Adjustments */
-
-/* Tablet (768px and up) */
-@media (min-width: 768px) {
-    h1 { font-size: 3.5rem; }
-    h2 { font-size: 2.25rem; }
-    
-    .strategy-section, .local-expertise {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        align-items: start;
-    }
-    
-    .strategy-section h2, .local-expertise h2 {
-        grid-column: 1 / -1;
-    }
-}
-
-/* Desktop (1024px and up) */
-@media (min-width: 1024px) {
-    section { padding: 5rem 0; }
-    
-    .services-summary ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    section { padding: 25px; }
+    h1 { text-align: left; }
+    blockquote { font-size: 1.2rem; }
 }
