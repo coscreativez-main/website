@@ -66,12 +66,12 @@
             </div>
         </div>
     </header>
-<main>
-    {{ content }}
-</main>
+    <main>
+        {{ content }}
+    </main>
 
-<!-- Footer -->
- <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container footer-grid">
 
             <div class="footer-col">
@@ -120,10 +120,8 @@
             <span class="modal-close" onclick="closeBlogPopup()">&times;</span>
             <div id="modalBody">
                 <script src="https://js-na2.hsforms.net/forms/embed/244392962.js" defer></script>
-                <div class="hs-form-frame" 
-                     data-region="na2" 
-                     data-form-id="05ad4a72-69a3-4558-abe4-c9fbbcb507c0"
-                     data-portal-id="244392962">
+                <div class="hs-form-frame" data-region="na2" data-form-id="05ad4a72-69a3-4558-abe4-c9fbbcb507c0"
+                    data-portal-id="244392962">
                 </div>
             </div>
         </div>
@@ -147,9 +145,21 @@
             const modal = document.getElementById('blogModal');
             if (modal) {
                 modal.style.display = 'flex';
-                
+
                 // If HubSpot is already loaded, ensure it renders the form
-                if (window.hbspt) {
+                if (!window.hbspt) {
+                    const script = document.createElement('script');
+                    script.src = "https://js-na2.hsforms.net/forms/embed/244392962.js";
+                    script.onload = function () {
+                        window.hbspt.forms.create({
+                            region: "na2",
+                            portalId: "244392962",
+                            formId: "05ad4a72-69a3-4558-abe4-c9fbbcb507c0",
+                            target: ".hs-form-frame"
+                        });
+                    };
+                    document.body.appendChild(script);
+                } else {
                     window.hbspt.forms.create({
                         region: "na2",
                         portalId: "244392962",
@@ -159,6 +169,7 @@
                 }
             }
         }
+            
 
         function closeBlogPopup() {
             const modal = document.getElementById('blogModal');
@@ -168,7 +179,7 @@
         }
 
         // Close on background click
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const modal = document.getElementById('blogModal');
             if (event.target == modal) {
                 closeBlogPopup();
