@@ -105,7 +105,7 @@ body {
     }
 
     .nav {
-        display: none;
+        display: flex; /* keep it always flex */
         position: absolute;
         top: 70px;
         left: 0;
@@ -116,7 +116,7 @@ body {
         gap: 16px;
         padding: 20px 0;
         border-bottom: 1px solid #eee;
-        
+        z-index: 1000;
        /* Animation properties */
         opacity: 0;
         pointer-events: none;
@@ -125,7 +125,6 @@ body {
     }
 
     .nav.active {
-        display: flex;
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
