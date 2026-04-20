@@ -1509,158 +1509,20 @@ article img {
 }
 
 /* Comparison Table */
-
-/* Add breathing space */
-.comparison {
-  padding: 60px 0;
+.services .table {
+  margin-top: 30px;
 }
 
-/* Improve heading presence */
-.comparison h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 28px;
-}
-
-/* Row hover effect (subtle interaction) */
-.comparison .row {
-  transition: all 0.25s ease;
-}
-
-.comparison .row:hover {
-  background: #f9fbff;
-}
-
-/* Emphasize Digital Marketing column */
-.comparison .row div:nth-child(2) {
-  background: #f4f8ff;
-  font-weight: 500;
-}
-
-/* Highlight Content Marketing as “strategic depth” */
-.comparison .row div:nth-child(3) {
-  background: #f8f6ff;
-  font-weight: 500;
-}
-
-/* Make first column labels stronger */
-.comparison .row div:first-child {
-  font-weight: 600;
-  color: #333;
-}
-
-/* Header styling upgrade */
-.comparison .row.head div {
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  color: #555;
-}
-
-/* Add slight column separation */
-.comparison .row div {
-  border-right: 1px solid #eee;
-}
-
-.comparison .row div:last-child {
-  border-right: none;
-}
-/* Base Table Styling (keep your design intact) */
-.comparison .table {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.comparison .row {
+.services .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border-bottom: 1px solid #e5e5e5;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
 }
 
-.comparison .row:last-child {
-  border-bottom: none;
-}
-
-.comparison .row div {
-  padding: 16px;
-  font-size: 15px;
-}
-
-/* Header row */
-.comparison .row.head {
-  background: #f8f9fb;
-  font-weight: 600;
-}
-
-/* ------------------ */
-/* RESPONSIVE DESIGN */
-/* ------------------ */
-
-/* Tablet */
-@media (max-width: 768px) {
-  .comparison .row {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .comparison .row.head {
-    display: none; /* hide header for stacked layout */
-  }
-
-  .comparison .row {
-    margin-bottom: 16px;
-    border: 1px solid #e5e5e5;
-    border-radius: 6px;
-  }
-
-  .comparison .row div {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #eee;
-  }
-
-  .comparison .row div:last-child {
-    border-bottom: none;
-  }
-
-  /* Add labels dynamically */
-  .comparison .row div:nth-child(1)::before {
-    content: "Instrument";
-    font-weight: 600;
-    opacity: 0.6;
-  }
-
-  .comparison .row div:nth-child(2)::before {
-    content: "Digital Marketing";
-    font-weight: 600;
-    opacity: 0.6;
-  }
-
-  .comparison .row div:nth-child(3)::before {
-    content: "Content Marketing";
-    font-weight: 600;
-    opacity: 0.6;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .comparison .row {
-    grid-template-columns: 1fr;
-  }
-
-  .comparison .row div {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-
-  .comparison .row div::before {
-    font-size: 13px;
-  }
+.services .row.head {
+  font-weight: bold;
+  background: var(--light);
 }
 
 /* CTA */
