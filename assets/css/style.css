@@ -1509,20 +1509,102 @@ article img {
 }
 
 /* Comparison Table */
-.services .table {
-  margin-top: 30px;
+/* Base Table Styling (keep your design intact) */
+.comparison .table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.services .row {
+.comparison .row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 12px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-.services .row.head {
-  font-weight: bold;
-  background: var(--light);
+.comparison .row:last-child {
+  border-bottom: none;
+}
+
+.comparison .row div {
+  padding: 16px;
+  font-size: 15px;
+}
+
+/* Header row */
+.comparison .row.head {
+  background: #f8f9fb;
+  font-weight: 600;
+}
+
+/* ------------------ */
+/* RESPONSIVE DESIGN */
+/* ------------------ */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .comparison .row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .comparison .row.head {
+    display: none; /* hide header for stacked layout */
+  }
+
+  .comparison .row {
+    margin-bottom: 16px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+  }
+
+  .comparison .row div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+  }
+
+  .comparison .row div:last-child {
+    border-bottom: none;
+  }
+
+  /* Add labels dynamically */
+  .comparison .row div:nth-child(1)::before {
+    content: "Instrument";
+    font-weight: 600;
+    opacity: 0.6;
+  }
+
+  .comparison .row div:nth-child(2)::before {
+    content: "Digital Marketing";
+    font-weight: 600;
+    opacity: 0.6;
+  }
+
+  .comparison .row div:nth-child(3)::before {
+    content: "Content Marketing";
+    font-weight: 600;
+    opacity: 0.6;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .comparison .row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison .row div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .comparison .row div::before {
+    font-size: 13px;
+  }
 }
 
 /* CTA */
