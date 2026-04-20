@@ -1509,6 +1509,62 @@ article img {
 }
 
 /* Comparison Table */
+
+/* Add breathing space */
+.comparison {
+  padding: 60px 0;
+}
+
+/* Improve heading presence */
+.comparison h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+/* Row hover effect (subtle interaction) */
+.comparison .row {
+  transition: all 0.25s ease;
+}
+
+.comparison .row:hover {
+  background: #f9fbff;
+}
+
+/* Emphasize Digital Marketing column */
+.comparison .row div:nth-child(2) {
+  background: #f4f8ff;
+  font-weight: 500;
+}
+
+/* Highlight Content Marketing as “strategic depth” */
+.comparison .row div:nth-child(3) {
+  background: #f8f6ff;
+  font-weight: 500;
+}
+
+/* Make first column labels stronger */
+.comparison .row div:first-child {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Header styling upgrade */
+.comparison .row.head div {
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+/* Add slight column separation */
+.comparison .row div {
+  border-right: 1px solid #eee;
+}
+
+.comparison .row div:last-child {
+  border-right: none;
+}
 /* Base Table Styling (keep your design intact) */
 .comparison .table {
   width: 100%;
