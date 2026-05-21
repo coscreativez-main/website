@@ -106,7 +106,7 @@ body {
     }
 
     .nav {
-        display: flex; /* keep it always flex */
+        display: none; /* keep it always flex */
         position: absolute;
         top: 70px;
         left: 0;
@@ -119,13 +119,14 @@ body {
         border-bottom: 1px solid #eee;
         z-index: 1000;
        /* Animation properties */
-       opacity: 1 !important;
-    pointer-events: auto !important;
-    transform: translateY(0) !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: translateY(0) !important;
         transition: all 0.3s ease;
     }
 
     .nav.active {
+        display: block;
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
