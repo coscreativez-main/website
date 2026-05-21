@@ -106,7 +106,7 @@ body {
     }
 
     .nav {
-        display: none; /* keep it always flex */
+        display: flex; /* keep it always flex */
         position: absolute;
         top: 70px;
         left: 0;
@@ -126,7 +126,6 @@ body {
     }
 
     .nav.active {
-        display: block;
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
