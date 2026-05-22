@@ -1584,7 +1584,7 @@ article img {
 /* Layout Container */
 .cos-policy-page-container {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 40px auto !important;
     padding: 0 24px;
 }
 
