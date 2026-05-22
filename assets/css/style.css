@@ -1578,3 +1578,136 @@ article img {
   }
 }
 
+  COS Creatives Privacy Policy Layout
+   ========================================================================== */
+
+/* Layout Container */
+.cos-policy-page-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+/* Header Section */
+.cos-policy-main-header {
+    margin-bottom: 40px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 20px;
+}
+
+.cos-policy-hero-title {
+    font-size: 2.25rem;
+    margin: 0 0 12px 0;
+    font-weight: 800;
+}
+
+.cos-policy-meta-date {
+    font-size: 0.95rem;
+    color: #718096;
+    margin: 0;
+}
+
+/* Base Body Typography */
+.cos-policy-content-body {
+    font-size: 1.05rem;
+}
+
+.cos-policy-section {
+    margin-bottom: 35px;
+}
+
+.cos-policy-paragraph {
+    margin: 0 0 20px 0;
+}
+
+/* Headings */
+.cos-policy-heading-two {
+    font-size: 1.5rem;
+    color: #1a202c;
+    margin: 35px 0 15px 0;
+    font-weight: 700;
+}
+
+.cos-policy-heading-three {
+    font-size: 1.15rem;
+    color: #4a5568;
+    margin: 25px 0 10px 0;
+    font-weight: 600;
+}
+
+/* Badges and Dimmed Text */
+.cos-policy-subtext {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #3182ce;
+    background-color: #ebf8ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Lists */
+.cos-policy-unordered-list {
+    margin: 0 0 25px 0;
+    padding-left: 24px;
+}
+
+.cos-policy-list-item {
+    margin-bottom: 12px;
+}
+
+.cos-policy-emphasis {
+    color: #1a202c;
+    font-weight: 600;
+}
+
+/* Decorative Elements */
+.cos-policy-divider {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 40px 0;
+}
+
+/* Callout Box Disclaimer */
+.cos-policy-callout-box {
+    background-color: #f7fafc;
+    border-left: 4px solid #e2e8f0;
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1rem;
+    color: #4a5568;
+    border-radius: 0 6px 6px 0;
+}
+
+/* ==========================================================================
+   Responsive Design & Mobile Optimization
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .cos-policy-page-container {
+        margin: 24px auto;
+        padding: 0 20px;
+    }
+
+    .cos-policy-hero-title {
+        font-size: 1.75rem;
+    }
+
+    .cos-policy-heading-two {
+        font-size: 1.3rem;
+    }
+
+    .cos-policy-heading-three {
+        font-size: 1.1rem;
+    }
+    
+    .cos-policy-subtext {
+        display: block;
+        margin-left: 0;
+        margin-top: 6px;
+        width: fit-content;
+    }
+}
