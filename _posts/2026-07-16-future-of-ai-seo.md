@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title: The Future of SEO: How AI and Machine Learning Are Changing Search
+title: The Future of SEO, How AI and Machine Learning Are Changing Search
 description: Discover how AI is changing search engines and the future of SEO. Learn how AI SEO helps businesses improve visibility, authority, and inbound lead generation in the age of AI search.
 ---
 
