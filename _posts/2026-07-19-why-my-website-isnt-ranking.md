@@ -44,7 +44,12 @@ A complete, plain-English guide covering:
 
 No fluff, no filler — just the checklist we actually use when auditing client websites.
 
-**[Download the free Core Web Vitals Optimization Guide →]**
+<a href="/assets/resources/Core-Web-Vitals-Optimization-Guide-COS-Creatives.pdf"
+   class="download-btn"
+   target="_blank"
+   rel="noopener">
+    📄 Download the Free Core Web Vitals Optimization Guide
+</a>
 
 ## Built by a Lead Generation Agency in Madurai, For Businesses Like Yours
 
