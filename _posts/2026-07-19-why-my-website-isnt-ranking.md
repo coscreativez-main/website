@@ -48,7 +48,7 @@ No fluff, no filler — just the checklist we actually use when auditing client 
     <a href="/assets/resources/Core-Web-Vitals-Optimization-Guide-COS-Creatives.pdf"
        target="_blank"
        rel="noopener"
-       style="display:inline-block;padding:14px 24px;background:#2563eb;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;">
+       style="display:inline-block;padding:14px 24px;background:#617fb3;color:#fff;text-decoration:none;border-radius:8px;font-weight:600;">
       Download the Free Core Web Vitals Optimization Guide →
     </a>
 </div>
@@ -59,6 +59,9 @@ We're COS Creatives, an inbound **lead generation agency in Madurai** working wi
 
 If you've been asking "why my website isn't ranking" for a while now, download the guide, run through the checklist that matches your situation, and see what changes in four to six weeks. If you'd rather have us run the audit for you, reach out — we'll tell you honestly what's worth fixing first.
 
-**[Get your free copy of the Core Web Vitals Playbook →]**
+<a style="text-align: center; margin: 2rem 0;" href="https://41i6te.share-na2.hsforms.com/2O_OWcbtbT2yVno2NXY9mjw" target="_blank" rel="noopener noreferrer" class="btn-primary">
+Get a Free Website Audit Now
+</a>
+ 
 
 *COS Creatives — Inbound Lead Generation Agency, Madurai*
