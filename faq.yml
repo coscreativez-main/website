@@ -1,0 +1,467 @@
+# _data/faq.yml
+# Single source of truth for the /faq page.
+# The faq.html layout loops over this file to render BOTH the accordion UI
+# and the FAQPage JSON-LD schema — edit content here only, never in the layout.
+#
+# Fields:
+#   category : groups items into accordion sections (order below = display order)
+#   question : shown as the accordion trigger + schema "name"
+#   answer   : shown in the accordion body + schema "acceptedAnswer.text"
+#   keywords : shown as a small "Related:" line under the answer (optional, good for AEO/on-page relevance)
+#   link     : optional internal link ("Learn more") shown after the answer
+
+- category: "Portfolio, Experience & Proof of Results"
+  question: "Have you worked with businesses in my specific industry before?"
+  answer: >-
+    We work primarily with startups, SaaS companies, and B2B/D2C brands across sectors
+    including IT services, education, real estate, and professional services. Rather than
+    claiming universal industry expertise, we're upfront during your first call about where
+    our experience is strongest and how that maps to your goals.
+  keywords: "lead generation agency experience, industry-specific marketing agency"
+
+- category: "Portfolio, Experience & Proof of Results"
+  question: "Can you share case studies showing similar lead generation or branding goals?"
+  answer: >-
+    Yes — we walk every prospective client through relevant case studies during the discovery
+    call, matched to your industry and goals where possible. We document the full lifecycle:
+    the challenge, the strategy we built, and the measurable outcome, including cost-per-lead
+    and pipeline impact where the client has approved sharing that data.
+  keywords: "lead generation case studies, agency proof of results"
+
+- category: "Portfolio, Experience & Proof of Results"
+  question: "Do you have before-and-after metrics for websites you redesigned using your templates?"
+  answer: >-
+    We track before-and-after performance on every redesign — organic ranking movement, page
+    speed, and lead conversion rate are the three we report on by default. Every site is built
+    around your specific keyword architecture, which is what actually drives the "after"
+    numbers rather than the redesign alone.
+  keywords: "website redesign results, SEO performance metrics"
+
+- category: "Portfolio, Experience & Proof of Results"
+  question: "Do you specialize in working with startups, or do you serve all business sizes?"
+  answer: >-
+    Startups and early-stage B2B/SaaS companies are our core focus — not an afterthought
+    bolted onto an enterprise offering. Our packages, timelines, and pricing are structured
+    around startup budgets and growth stages, not scaled-down versions of an enterprise retainer.
+  keywords: "startup marketing agency, lead generation for startups"
+
+- category: "Strategy, Process & Lead Qualification"
+  question: "How do you qualify leads to ensure they are high-intent?"
+  answer: >-
+    We qualify leads using a mix of intent signals — search behavior, form-fill data, and lead
+    scoring based on fit against your Ideal Customer Profile (ICP) — before they ever reach
+    your sales team. This is built into the inbound lead generation systems we set up, so
+    you're not spending sales time on unqualified inquiries.
+  keywords: "lead qualification process, high-intent leads"
+
+- category: "Strategy, Process & Lead Qualification"
+  question: "What framework do you use to build a strategic brand narrative?"
+  answer: >-
+    We build brand narratives around a Topical Authority framework — mapping every core
+    message, keyword, and content pillar back to what your buyers are actually searching for
+    at each funnel stage. This keeps brand storytelling and SEO working together instead of as
+    two disconnected workstreams.
+  keywords: "brand strategy framework, content marketing strategy"
+
+- category: "Strategy, Process & Lead Qualification"
+  question: "Will my website be customized for SEO and mobile responsiveness?"
+  answer: >-
+    Yes. Every site we build or redesign is optimized for technical SEO (crawlability, page
+    speed, structured data) and tested across mobile breakpoints before launch. A visually
+    polished site that doesn't rank or doesn't convert on mobile isn't a deliverable we
+    consider finished.
+  keywords: "SEO-friendly website design, mobile responsive website"
+
+- category: "Strategy, Process & Lead Qualification"
+  question: "What's the difference between inbound and outbound lead generation?"
+  answer: >-
+    Outbound lead generation reaches out to prospects directly — cold email, ads, cold calling.
+    Inbound lead generation attracts prospects through SEO, content, and lead magnets so they
+    come to you already interested. We typically recommend startups build inbound as the
+    long-term engine, using outbound to fill the pipeline while inbound compounds.
+  keywords: "inbound lead generation, outbound lead generation"
+  link: "/lead-generation-agency-madurai/"
+
+- category: "Strategy, Process & Lead Qualification"
+  question: "Can a lead generation agency guarantee leads?"
+  answer: >-
+    Be cautious of any agency that guarantees a specific number of leads — lead volume depends
+    on market size, budget, and offer strength, none of which an agency fully controls. What we
+    commit to contractually are the deliverables, activities, and reporting cadence; lead
+    volume is then forecast based on your specific market data, not promised as a blanket number.
+  keywords: "guaranteed leads, lead generation agency promises"
+
+- category: "Strategy, Process & Lead Qualification"
+  question: "What KPIs do you track to measure lead generation success?"
+  answer: >-
+    We track cost per lead, lead-to-opportunity conversion rate, organic keyword rankings, and
+    pipeline contribution by channel — reported against the goals we set together at kickoff.
+    Vanity metrics like raw traffic or impressions are shared for context but are never the
+    primary success measure.
+  keywords: "lead generation KPIs, marketing performance metrics"
+
+- category: "Working With Us — Workflow, Communication & Reporting"
+  question: "Who will be my primary point of contact day-to-day?"
+  answer: >-
+    You're assigned a single point of contact for day-to-day communication, backed by the
+    specialists (SEO, content, paid media) actually executing the work. You're never routed
+    through a generic support inbox.
+  keywords: "agency communication, dedicated account manager"
+
+- category: "Working With Us — Workflow, Communication & Reporting"
+  question: "How often do you send performance reports (weekly, bi-weekly, monthly)?"
+  answer: >-
+    Reporting cadence is agreed at kickoff based on the engagement — typically monthly for
+    SEO/content work, since organic movement is gradual, and bi-weekly or weekly for active
+    paid campaigns, where faster iteration matters.
+  keywords: "marketing performance reports, reporting cadence"
+
+- category: "Working With Us — Workflow, Communication & Reporting"
+  question: "What software platforms do you use for project tracking and collaboration?"
+  answer: >-
+    We work in shared project management and reporting dashboards so you have real-time
+    visibility into task status and campaign performance, rather than waiting on a scheduled
+    report to know where things stand.
+  keywords: "project management tools, agency collaboration process"
+
+- category: "Pricing, Packages & Lead Generation Cost"
+  question: "Are your services billed as a monthly retainer or a fixed project fee?"
+  answer: >-
+    Both models are available. Ongoing work like SEO, content, and lead generation is typically
+    billed as a monthly retainer since it compounds over time; one-off deliverables like a
+    website build or a single campaign are quoted as a fixed project fee.
+  keywords: "lead generation pricing, retainer vs project fee"
+
+- category: "Pricing, Packages & Lead Generation Cost"
+  question: "What specific deliverables are guaranteed in the contract package?"
+  answer: >-
+    Every engagement includes a written scope of work listing exact deliverables — number of
+    content pieces, campaigns, reports, and revision rounds — so there's no ambiguity about
+    what's included before you sign.
+  keywords: "marketing contract deliverables, agency SOW"
+
+- category: "Pricing, Packages & Lead Generation Cost"
+  question: "Are there any hidden fees for revisions, stock assets, or software licenses?"
+  answer: >-
+    No. Revision rounds, any third-party tool or stock asset costs, and software licensing are
+    all itemized upfront in the proposal, not discovered mid-project. If something falls
+    outside the original scope, you'll see a quote for it before we proceed, not an invoice
+    after.
+  keywords: "agency hidden fees, marketing costs transparency"
+
+- category: "Pricing, Packages & Lead Generation Cost"
+  question: "How much to pay for a lead? What is a lead price?"
+  answer: >-
+    There's no universal "right" lead price — it depends on your industry, deal size, and
+    channel. A B2B SaaS lead with a high average contract value can justify a much higher cost
+    per lead than a low-ticket local service lead. We benchmark this against your specific unit
+    economics during onboarding rather than quoting a flat number that doesn't apply to your
+    business.
+  keywords: "lead generation cost, lead price, cost per lead"
+
+- category: "Pricing, Packages & Lead Generation Cost"
+  question: "Do companies pay for leads, and is it worth paying for leads?"
+  answer: >-
+    Yes, many companies pay for leads through paid ads, lead marketplaces, or agency-run
+    campaigns — and it can be worth it when the cost per lead is lower than your customer
+    lifetime value and the leads are genuinely qualified. The risk is paying for volume without
+    qualification, which is why we pair paid lead generation with qualification criteria from
+    day one.
+  keywords: "buying leads, is paid lead generation worth it"
+
+- category: "Pricing, Packages & Lead Generation Cost"
+  question: "How much does a lead generation agency charge in India?"
+  answer: >-
+    Pricing varies widely by scope — a startup-focused retainer covering SEO, content, and
+    inbound lead generation typically costs meaningfully less than a full-funnel enterprise
+    engagement with heavy paid media spend layered in. We scope pricing around your stage and
+    budget rather than a one-size-fits-all package; get in touch for a quote specific to your
+    goals.
+  keywords: "lead generation agency cost India, lead generation pricing India"
+  link: "/lead-generation-agency-madurai/"
+
+- category: "Pricing, Packages & Lead Generation Cost"
+  question: "What is a good cost per lead for a startup in India?"
+  answer: >-
+    A "good" cost per lead is relative to your average deal value and sales conversion rate,
+    not a fixed rupee figure — a lead costing ₹500 that never converts is worse than one
+    costing ₹2,000 that closes reliably. We help startups calculate their break-even cost per
+    lead based on actual unit economics before setting channel budgets.
+  keywords: "cost per lead benchmark, good CPL for startups"
+
+- category: "Lead Generation Fundamentals"
+  question: "What is the best way to get new business leads?"
+  answer: >-
+    For most startups, the most sustainable approach combines SEO and inbound content — to
+    build a compounding, lower-cost channel — with targeted paid campaigns for immediate
+    pipeline while organic builds. Relying on a single channel, especially only outbound or
+    only paid, tends to be the most expensive and least stable long-term strategy.
+  keywords: "best way to get leads, business lead generation"
+
+- category: "Lead Generation Fundamentals"
+  question: "What is the 3-3-3 rule in sales?"
+  answer: >-
+    The 3-3-3 rule is a prospecting guideline: spend roughly 3 minutes researching a prospect,
+    use no more than 3 sentences in your outreach message, and follow up within 3 business days
+    if there's no response. It's designed to keep outbound outreach efficient and
+    non-intrusive.
+  keywords: "3-3-3 rule sales, sales prospecting framework"
+
+- category: "Lead Generation Fundamentals"
+  question: "Can ChatGPT generate leads?"
+  answer: >-
+    ChatGPT and similar AI tools can support lead generation — drafting outreach copy,
+    researching prospects, or answering visitor questions on a website — but they don't
+    generate leads on their own without a strategy and a system for capturing and qualifying
+    the people who respond. AI is increasingly also a discovery channel itself, which is why
+    structuring website content to be clearly understood by AI systems is becoming part of
+    modern SEO.
+  keywords: "AI lead generation, ChatGPT for lead generation"
+
+- category: "Lead Generation Fundamentals"
+  question: "How to generate 100 leads a day?"
+  answer: >-
+    Generating leads at that volume consistently requires paid media at scale, a
+    high-converting landing page, and often multiple channels running simultaneously — it's
+    rarely achievable through a single organic tactic alone. For most startups, a steadily
+    growing weekly lead volume from a mix of inbound and paid channels is a more realistic and
+    sustainable goal.
+  keywords: "generate leads daily, high-volume lead generation"
+
+- category: "Lead Generation Fundamentals"
+  question: "How to find B2B clients?"
+  answer: >-
+    The most reliable combination is LinkedIn outreach and content, SEO targeting your buyers'
+    actual search terms, and industry-specific communities or directories — used together
+    rather than any single channel in isolation.
+  keywords: "find B2B clients, B2B lead generation"
+
+- category: "Lead Generation Fundamentals"
+  question: "Who pays the most for leads?"
+  answer: >-
+    Industries with high customer lifetime value and long sales cycles — such as B2B SaaS,
+    real estate, legal services, and financial services — typically support the highest cost
+    per lead, because a single converted customer justifies a larger acquisition spend.
+  keywords: "highest paying industries for leads, high value leads"
+
+- category: "Lead Generation Fundamentals"
+  question: "How to get leads without paying?"
+  answer: >-
+    Organic/inbound channels — SEO, content marketing, referrals, and organic social — generate
+    leads without direct media spend, though they require an upfront investment of time or
+    content-production cost instead.
+  keywords: "free lead generation, organic lead generation"
+
+- category: "Lead Generation Fundamentals"
+  question: "Is lead generation profitable?"
+  answer: >-
+    Lead generation is profitable when your cost per acquired customer stays below your
+    customer lifetime value — profitability isn't inherent to lead generation itself, it
+    depends entirely on how well leads are qualified and converted downstream.
+  keywords: "is lead generation profitable, lead generation ROI"
+
+- category: "Lead Generation Fundamentals"
+  question: "How to get leads quickly?"
+  answer: >-
+    Paid search and paid social are the fastest levers, since they can start driving traffic
+    and inquiries within days, unlike SEO which typically takes months to compound. The
+    tradeoff is cost — quick leads via paid channels usually cost more per lead than organic
+    ones built over time.
+  keywords: "fast lead generation, quick leads"
+
+- category: "Lead Generation Fundamentals"
+  question: "Is lead generation illegal?"
+  answer: >-
+    Lead generation itself is legal, but how you collect and use contact data is regulated —
+    for example, unsolicited bulk messaging or ignoring opt-out requests can violate spam and
+    data-privacy regulations. Ethical lead generation means transparent data collection,
+    honoring opt-outs, and complying with applicable regulations like India's DPDP Act.
+  keywords: "is lead generation legal, lead generation compliance"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How do I promote my business with no money?"
+  answer: >-
+    Organic channels are your best option: Google Business Profile optimization, SEO-driven
+    content, organic social posting, and direct outreach to your network all cost time rather
+    than money. It's slower than paid promotion, but it's how most bootstrapped startups build
+    their first traction.
+  keywords: "promote business with no money, free marketing for startups"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "Where can I promote my small business for free?"
+  answer: >-
+    Google Business Profile, LinkedIn, Instagram, WhatsApp Business, local business
+    directories, and community/industry forums are all free channels worth setting up before
+    spending on ads — especially Google Business Profile, which directly affects local search
+    visibility.
+  keywords: "free business promotion platforms"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "What is the cheapest way to promote your business?"
+  answer: >-
+    Local SEO and Google Business Profile optimization are typically the lowest-cost,
+    highest-ROI starting point for any local or regional business, since they capture people
+    already searching for what you offer.
+  keywords: "cheapest way to promote business"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How do I promote my business online for free in India?"
+  answer: >-
+    Start with a claimed and fully optimized Google Business Profile, consistent posting on
+    Instagram/LinkedIn relevant to your audience, and WhatsApp Business for direct customer
+    communication — all free, and all high-usage platforms among Indian consumers and B2B
+    buyers alike.
+  keywords: "free online promotion India, promote business online India"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How do I promote my offline business?"
+  answer: >-
+    Local SEO (so people searching nearby find you), Google Business Profile, local
+    partnerships, and community events remain the strongest offline-to-online bridge — most
+    "offline" discovery today still starts with an online search.
+  keywords: "offline business promotion, local business marketing"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "What are the 7 methods of promotion?"
+  answer: >-
+    The classic promotion mix includes advertising, sales promotion, personal selling, public
+    relations, direct marketing, digital/social media marketing, and sponsorship. Most growing
+    startups lean heavily on digital and direct marketing first, since they're the most
+    measurable and budget-flexible.
+  keywords: "methods of promotion, promotion mix marketing"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "What is the best way to promote your small business online?"
+  answer: >-
+    A combination of local SEO, a conversion-optimized website, and consistent content on the
+    platforms your customers already use — rather than spreading thin across every channel at
+    once. Depth on 2-3 channels consistently outperforms shallow presence on all of them.
+  keywords: "promote small business online"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How do I attract customers to my business?"
+  answer: >-
+    Clarity on who your ideal customer is (ICP), visibility where they're already searching
+    (SEO, local search), and a clear reason to choose you over alternatives (positioning) —
+    attracting customers is rarely a single-tactic problem.
+  keywords: "attract customers, customer acquisition strategy"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How can I make my online business successful?"
+  answer: >-
+    Consistent visibility (SEO and content), a website that actually converts visitors into
+    leads, and a feedback loop where you track what's working by channel — successful online
+    businesses treat marketing as a system to refine, not a one-time setup.
+  keywords: "online business success, grow online business"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How to get your first 5 clients?"
+  answer: >-
+    Direct outreach to your existing network, warm referrals, and founder-led content (posting
+    your expertise where your ICP spends time, like LinkedIn) typically outperform paid ads for
+    the very first clients — you need trust more than reach at this stage.
+  keywords: "first 5 clients, early-stage client acquisition"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How to get clients immediately?"
+  answer: >-
+    Direct outreach and paid search/social are your fastest levers for immediate results, since
+    they don't require the months of compounding that SEO and organic content need. Treat this
+    as a short-term bridge while you build organic channels that lower cost per client over
+    time.
+  keywords: "get clients fast, immediate client acquisition"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How to get your first 100 customers?"
+  answer: >-
+    Most startups get their first 100 customers through a mix of founder-led outreach,
+    referrals from early happy customers, and one or two channels tested and doubled down on —
+    not a broad multi-channel campaign. Focus and iteration beat breadth at this stage.
+  keywords: "first 100 customers, early customer acquisition"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How to attract the first customer?"
+  answer: >-
+    Your first customer is usually won through direct, personal outreach and a clear, specific
+    value proposition, not broad marketing. Marketing systems (SEO, paid ads, content) become
+    more efficient once you have a validated offer to point them at.
+  keywords: "first customer, first sale startup"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "How do I attract customers on WhatsApp?"
+  answer: >-
+    WhatsApp Business lets you share a catalog, respond quickly to inquiries, and post business
+    updates via WhatsApp Status — it works best as a conversion and nurture channel for leads
+    you've already generated elsewhere (SEO, ads, referrals), rather than as a standalone lead
+    source.
+  keywords: "WhatsApp marketing, WhatsApp Business for lead generation"
+
+- category: "Startup & Small Business Customer Acquisition"
+  question: "What are the 4 main customer needs marketers should understand?"
+  answer: >-
+    Customers generally buy based on price, quality, convenience, and experience — knowing
+    which of these matters most to your specific audience shapes everything from your
+    messaging to which channel you prioritize. This is foundational to building an accurate
+    Ideal Customer Profile (ICP).
+  keywords: "customer needs, understanding your ICP"
+
+- category: "Inbound Marketing, SEO & AI Search Visibility"
+  question: "What is inbound lead generation and how is it different from traditional marketing?"
+  answer: >-
+    Inbound lead generation attracts prospects to you through SEO, content, and lead magnets,
+    so they arrive already interested, versus traditional/outbound marketing, which interrupts
+    prospects with ads or cold outreach. Inbound typically costs less per lead over time but
+    takes longer to build momentum, which is why most of our startup clients run both in
+    parallel during the first few months.
+  keywords: "inbound lead generation, inbound marketing vs traditional marketing"
+  link: "/lead-generation-agency-madurai/"
+
+- category: "Inbound Marketing, SEO & AI Search Visibility"
+  question: "How long does SEO take to show results for a startup?"
+  answer: >-
+    Meaningful ranking movement typically starts within 3-6 months for a well-executed SEO
+    campaign, with compounding results building over 6-12 months — startups with newer domains
+    and less existing authority are usually on the longer end of that range. We recommend
+    pairing SEO with a shorter-term channel like paid search while the organic engine builds.
+  keywords: "SEO timeline for startups, how long does SEO take"
+  link: "/services/"
+
+- category: "Inbound Marketing, SEO & AI Search Visibility"
+  question: "Is SEO or paid ads better for early-stage startups?"
+  answer: >-
+    Neither alone is usually the right answer — paid ads deliver immediate leads while your
+    budget is active, and SEO builds a compounding channel that keeps generating leads without
+    ongoing spend, but takes months to mature. Most startups get the best outcome running both
+    together.
+  keywords: "SEO vs paid ads for startups"
+
+- category: "Inbound Marketing, SEO & AI Search Visibility"
+  question: "What does an inbound lead generation agency actually do?"
+  answer: >-
+    An inbound lead generation agency builds and manages the systems that attract, capture, and
+    qualify leads organically — SEO strategy, content production, lead magnets, landing pages,
+    and nurture workflows — rather than just running paid ad campaigns. The goal is a pipeline
+    that keeps producing leads even when ad spend pauses.
+  keywords: "inbound lead generation agency, what does a lead gen agency do"
+  link: "/lead-generation-agency-madurai/"
+
+- category: "Inbound Marketing, SEO & AI Search Visibility"
+  question: "How do I choose the best lead generation agency in Madurai?"
+  answer: >-
+    Look for an agency that shows real case studies, is transparent about pricing and what's
+    actually guaranteed in the contract, and specializes in your business stage — a
+    startup-focused agency will scope work and pricing differently than one built for
+    enterprise retainers. Ask specifically how they define and report cost per lead before
+    signing anything.
+  keywords: "best lead generation agency Madurai, choosing a lead gen agency"
+  link: "/lead-generation-agency-madurai/"
+
+- category: "Inbound Marketing, SEO & AI Search Visibility"
+  question: "Will AI search (ChatGPT, Gemini, Google AI Overviews) replace SEO?"
+  answer: >-
+    AI search is changing how people find businesses, but it isn't replacing SEO — it's built
+    largely on the same signals (structured content, authority, clear answers to specific
+    questions) that traditional SEO relies on. Structuring website content, including FAQ pages
+    like this one, to directly answer real questions is now part of both ranking in Google and
+    being cited by AI assistants — a practice often called Answer Engine Optimization (AEO).
+  keywords: "AI search SEO, AI Overviews, answer engine optimization"
