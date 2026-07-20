@@ -1,7 +1,7 @@
 # Site Settings
 title: COS Creatives
-email: karthick@coscreatives.in
-description: Digital Marketing & Content Marketing Agency in Madurai.
+email: coscreativez@gmail.com
+description: Lead Generation Agency Madurai | We help Tamil Nadu startups generate qualified inbound leads through SEO, content marketing, and Google Ads.
 url: "https://www.coscreatives.in" # Your domain
 baseurl: "" # Leave this empty
 
@@ -12,6 +12,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Resources collection (for downloadable guides/PDFs)
+collections:
+  resources:
+    output: true
+    permalink: /resources/:path/
 
 # Exclude these from the build
 exclude:
