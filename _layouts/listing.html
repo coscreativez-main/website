@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<section class="listing-hero">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        {% if content %}
+        <div class="listing-intro">{{ content }}</div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="listing-body">
+    <div class="container">
+
+        {% if page.filters %}
+        <div class="listing-filters">
+            <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+            {% for f in page.filters %}
+            <button class="filter-btn" data-filter="{{ f }}" type="button">{{ f | capitalize }}</button>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="listing-grid">
+            {% assign items = site[page.source] | sort: "date" | reverse %}
+            {% for item in items %}
+            <a class="listing-card" href="{{ item.url | relative_url }}" data-type="{{ item.type | default: 'blog' }}">
+                {% if item.thumbnail %}
+                <div class="listing-card-thumb">
+                    <img src="{{ item.thumbnail | relative_url }}" alt="{{ item.title }}" loading="lazy">
+                </div>
+                {% endif %}
+                <div class="listing-card-body">
+                    {% if item.type %}
+                    <span class="resource-badge resource-badge--{{ item.type }}">{{ item.type | capitalize }}</span>
+                    {% endif %}
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.excerpt | default: item.description }}</p>
+                    <p class="listing-card-date">{{ item.date | date: "%B %d, %Y" }}</p>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.listing-card');
+    buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            buttons.forEach(function (b) { b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            var filter = btn.getAttribute('data-filter');
+            cards.forEach(function (card) {
+                var show = filter === 'all' || card.getAttribute('data-type') === filter;
+                card.style.display = show ? '' : 'none';
+            });
+        });
+    });
+});
+</script>

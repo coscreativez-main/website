@@ -1,0 +1,87 @@
+---
+layout: default
+---
+<section class="faq-hero">
+    <div class="container">
+        <p class="faq-eyebrow">FAQs</p>
+        <h1>{{ page.title }}</h1>
+        {% if content %}
+        <div class="faq-intro">{{ content }}</div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="faq-body">
+    <div class="container faq-layout">
+
+        <nav class="faq-toc" aria-label="FAQ categories">
+            <p class="faq-toc-label">Jump to</p>
+            <ul>
+                {% assign grouped = site.data.faq | group_by: "category" %}
+                {% for group in grouped %}
+                <li><a href="#{{ group.name | slugify }}">{{ group.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <div class="faq-content">
+            {% for group in grouped %}
+            <div class="faq-category" id="{{ group.name | slugify }}">
+                <h2>{{ group.name }}</h2>
+
+                {% for item in group.items %}
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" type="button">
+                        <span>{{ item.question }}</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>{{ item.answer }}</p>
+                        {% if item.link %}
+                        <p class="faq-link"><a href="{{ item.link | relative_url }}">Learn more →</a></p>
+                        {% endif %}
+                        {% if item.keywords %}
+                        <p class="faq-keywords">Related: {{ item.keywords }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+<!-- Auto-generated FAQPage schema — sourced from _data/faq.yml, no manual duplication needed -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in site.data.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.faq-question').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var isOpen = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!isOpen));
+            btn.parentElement.classList.toggle('is-open', !isOpen);
+        });
+    });
+});
+</script>
