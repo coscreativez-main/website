@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% include faq-schema.html %}
+
 <article class="post-container">
     <header class="post-header">
         <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
@@ -10,4 +12,15 @@ layout: default
     <div class="post-content">
         {{ content }}
     </div>
+
+    <div class="faq-section">
+
+
+  <h2>FAQs</h2>
+  {% for item in page.faq %}
+    <h3>{{ item.question }}</h3>
+    <p>{{ item.answer }}</p>
+  {% endfor %}
+</div>
+    
 </article>
