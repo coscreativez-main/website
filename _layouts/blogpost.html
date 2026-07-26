@@ -11,4 +11,13 @@ layout: default
         {{ content }}
     </div>
     
+<div class="faq-section">
+  <h2>FAQs</h2>
+  {% for item in page.faq %}
+    <h3>{{ item.question }}</h3>
+    <p>{{ item.answer }}</p>
+  {% endfor %}
+</div>
+
+    
 </article>
