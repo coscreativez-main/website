@@ -99,6 +99,6 @@ Cold email isn't dead, but it's less effective at scale. Spam filters and buyer 
 
 ---
 
-*COS Creatives is an inbound lead generation agency in Madurai helping B2B and SaaS startups across Tamil Nadu build lead generation systems that combine SEO, content, and CRM-backed follow-up, not just one-off campaigns. [Get a Free Audit] (https://41i6te.share-na2.hsforms.com/2O_OWcbtbT2yVno2NXY9mjw) {:target="_blank"} to see where your current funnel is leaking leads.*
+*COS Creatives is an inbound lead generation agency in Madurai helping B2B and SaaS startups across Tamil Nadu build lead generation systems that combine SEO, content, and CRM-backed follow-up, not just one-off campaigns. [Get a Free Audit](https://41i6te.share-na2.hsforms.com/2O_OWcbtbT2yVno2NXY9mjw){:target="_blank"} to see where your current funnel is leaking leads.*
 
 ---
