@@ -1,6 +1,6 @@
 ---
 layout: blogpost
-title: User-Declared Canonical vs. Google-Selected Canonical: Fix It
+title: User-Declared Canonical vs. Google-Selected Canonical- Fix It
 description: Seeing "User-declared canonical vs. Google-selected canonical" in Search Console? Here's why it happens and how to fix it — a technical SEO for startups guide.
 ---
 
