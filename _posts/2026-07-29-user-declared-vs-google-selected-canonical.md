@@ -11,7 +11,7 @@ faq:
   - question: "Why does Google ignore my canonical tag?"
     answer: "Usually because a stronger signal disagrees with it - a 301 redirect, internal links pointing elsewhere, a sitemap listing a different URL, external backlinks favoring another version, or the canonical target being non-indexable (blocked by robots.txt, noindex, or itself a redirect)."
   - question: "How do I fix a canonical tag that Google isn't respecting?"
-    answer: "Align every signal to the same preferred URL: canonical tag, 301 redirects, internal links, XML sitemap, structured data, Open Graph tags, and external profile links. Once all signals agree, Google has no ambiguity left to resolve on its own."
+    answer: "Align every signal to the same preferred URL- canonical tag, 301 redirects, internal links, XML sitemap, structured data, Open Graph tags, and external profile links. Once all signals agree, Google has no ambiguity left to resolve on its own."
   - question: "Does www vs. non-www affect canonical selection?"
     answer: "Yes. If your internal links, sitemap, and canonical tags don't consistently use the same www or non-www version, Google treats them as separate signals and may choose the version it sees referenced most, rather than the one you declared."
   - question: "Should startups worry about canonical issues?"
