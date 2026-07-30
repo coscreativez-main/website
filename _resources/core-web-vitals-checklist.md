@@ -3,7 +3,7 @@ layout: resource
 title: "The Core Web Vitals Checklist for Startup Websites"
 type: guide
 date: 2026-07-15
-excerpt: "A practical, no-fluff checklist to fix the Core Web Vitals issues most startup websites ship with — before they cost you rankings and leads."
+description: "A practical, no-fluff checklist to fix the Core Web Vitals issues most startup websites ship with — before they cost you rankings and leads."
 thumbnail: assets/images/resources/core-web-vitals-checklist.webp
 file: assets/resources/Core-Web-Vitals-Optimization-Guide-COS-Creatives.pdf
 cta_label: "Download the PDF"
