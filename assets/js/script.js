@@ -94,3 +94,70 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+/* ============================================
+   Scroll-reveal for Industries cards and
+   Built-for points. Pure vanilla JS, no deps.
+
+   Fully namespaced under window.cosServicesReveal
+   so it can't collide with any existing script,
+   variable, or observer on the site. Safe to load
+   alongside your current JS with no changes there.
+
+   Respects prefers-reduced-motion by skipping the
+   animation setup entirely (elements stay visible).
+   ============================================ */
+(function (ns) {
+  // Guard against this script being included more than once
+  if (ns.__initialized) return;
+  ns.__initialized = true;
+
+  var SELECTOR = '.industry-card, .built-for__point';
+
+  function init() {
+    var prefersReduced = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    ).matches;
+
+    if (prefersReduced) return;
+
+    var targets = document.querySelectorAll(SELECTOR);
+
+    if (!targets.length || !('IntersectionObserver' in window)) return;
+
+    targets.forEach(function (el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    });
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry, i) {
+          if (entry.isIntersecting) {
+            var el = entry.target;
+            var delay = (i % 3) * 80; // slight stagger within each grid
+            setTimeout(function () {
+              el.style.opacity = '1';
+              el.style.transform = 'translateY(0)';
+            }, delay);
+            observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    targets.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  ns.init = init;
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})(window.cosServicesReveal = window.cosServicesReveal || {});
+
