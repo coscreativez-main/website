@@ -372,6 +372,235 @@ body {
     }
 }
 
+*/service page*/
+
+/* ============================================
+   TOKENS — scoped to .industries / .built-for
+   only, so nothing here touches your existing
+   global styles or :root variables. Swap these
+   values to match your real brand colors/fonts;
+   everything below inherits from them.
+   ============================================ */
+.industries,
+.built-for {
+  --cos-ink:      #12181f;   /* primary text / dark backgrounds */
+  --cos-paper:    #f7f8fa;   /* light section background */
+  --cos-steel:    #5b6472;   /* secondary/body text */
+  --cos-blueprint:#2f6fed;   /* accent — links, icons, numerals */
+  --cos-signal:   #ffb020;   /* warm highlight, sparingly */
+  --cos-line:     rgba(18,24,31,0.08);
+
+  --cos-font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --cos-font-body:    'Inter', system-ui, sans-serif;
+}
+
+/* Reduced motion respected, scoped to these sections only */
+@media (prefers-reduced-motion: reduce) {
+  .industry-card,
+  .built-for__point { transition: none !important; }
+}
+
+/* ============================================
+   SHARED (scoped selectors only — no bare tags)
+   ============================================ */
+.industries .eyebrow,
+.built-for .eyebrow {
+  font-family: var(--cos-font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cos-blueprint);
+  margin-bottom: 0.75rem;
+}
+
+/* ============================================
+   INDUSTRIES SECTION
+   ============================================ */
+.industries {
+  padding: 5rem 1.5rem;
+  background: var(--cos-paper);
+}
+
+.industries__header {
+  max-width: 640px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.industries__header h2 {
+  font-family: var(--cos-font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  color: var(--cos-ink);
+  margin: 0 0 1rem;
+  line-height: 1.15;
+}
+
+.industries__intro {
+  font-family: var(--cos-font-body);
+  color: var(--cos-steel);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.industries__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.industry-card {
+  background: #fff;
+  border: 1px solid var(--cos-line);
+  border-radius: 8px;
+  padding: 1.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.industry-card:hover,
+.industry-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -12px rgba(18,24,31,0.18);
+  border-color: var(--cos-blueprint);
+}
+
+.industry-card__icon {
+  width: 40px;
+  height: 40px;
+  color: var(--cos-blueprint);
+  margin-bottom: 1rem;
+}
+
+.industry-card__icon svg { width: 100%; height: 100%; }
+
+.industry-card h3 {
+  font-family: var(--cos-font-display);
+  font-size: 1.1rem;
+  color: var(--cos-ink);
+  margin: 0 0 0.5rem;
+}
+
+.industry-card p {
+  font-family: var(--cos-font-body);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--cos-steel);
+  margin: 0;
+}
+
+.industries__footnote {
+  max-width: 640px;
+  margin: 2.5rem auto 0;
+  text-align: center;
+  font-family: var(--cos-font-body);
+  font-size: 0.9rem;
+  color: var(--cos-steel);
+}
+
+.industries__footnote a {
+  color: var(--cos-blueprint);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+/* ============================================
+   BUILT FOR STARTUPS SECTION
+   Signature element: a faint blueprint grid
+   behind a dark panel — ties directly to your
+   "architecture" language elsewhere on the page.
+   ============================================ */
+.built-for {
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 1.5rem;
+  background: var(--cos-ink);
+  isolation: isolate;
+}
+
+.built-for__grid-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at center, black 40%, transparent 85%);
+}
+
+.built-for__header {
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.built-for__header h2 {
+  font-family: var(--cos-font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  color: #fff;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+.built-for__intro {
+  font-family: var(--cos-font-body);
+  color: rgba(255,255,255,0.7);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.built-for__points {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.built-for__point {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.built-for__num {
+  display: block;
+  font-family: var(--cos-font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cos-signal);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.built-for__point h3 {
+  font-family: var(--cos-font-display);
+  font-size: 1.15rem;
+  color: #fff;
+  margin: 0 0 0.6rem;
+}
+
+.built-for__point p {
+  font-family: var(--cos-font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.65);
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 640px) {
+  .industries, .built-for { padding: 3.5rem 1.25rem; }
+  .industries__grid, .built-for__points { grid-template-columns: 1fr; }
+}
+
 /* Story Section */
 .story {
     width: 100%;
