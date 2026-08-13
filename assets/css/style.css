@@ -373,7 +373,6 @@ body {
 }
 
 */service page*/
-
 /* ============================================
    TOKENS — scoped to .industries / .built-for
    only, so nothing here touches your existing
@@ -417,9 +416,9 @@ body {
 /* ============================================
    INDUSTRIES SECTION
    ============================================ */
-.industries {
+section.industries.industries {
   padding: 5rem 1.5rem;
-  background: var(--cos-paper);
+  background-color: var(--cos-paper, #f7f8fa) !important;
 }
 
 .industries__header {
@@ -513,11 +512,11 @@ body {
    behind a dark panel — ties directly to your
    "architecture" language elsewhere on the page.
    ============================================ */
-.built-for {
+section.built-for.built-for {
   position: relative;
   overflow: hidden;
   padding: 5rem 1.5rem;
-  background: var(--cos-ink);
+  background-color: var(--cos-ink, #12181f) !important;
   isolation: isolate;
 }
 
@@ -600,6 +599,7 @@ body {
   .industries, .built-for { padding: 3.5rem 1.25rem; }
   .industries__grid, .built-for__points { grid-template-columns: 1fr; }
 }
+
 
 /* Story Section */
 .story {
