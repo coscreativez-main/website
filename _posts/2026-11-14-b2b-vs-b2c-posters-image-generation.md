@@ -17,9 +17,6 @@ faq:
   - question: "Should B2B marketing images always look professional and minimalist?"
     answer: "No. Professionalism doesn't necessarily mean minimalism. B2B brands can use colourful, expressive and creative imagery when it supports their positioning. The priority is to communicate credibility and relevance to the intended business audience."
 ---
-
-# B2B vs B2C Posters: How to Create Visuals That Actually Work
-
 A visually attractive marketing creative doesn't necessarily make an
 effective advertisement. Sometimes, the problem isn't the design, the
 colours or even the quality of the image. It's the way the image
