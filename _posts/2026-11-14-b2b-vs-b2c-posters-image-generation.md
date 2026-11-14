@@ -134,32 +134,18 @@ colourful images for B2C.
 The entire creative direction changes depending on the audience, message
 and marketing objective.
 
-  -----------------------------------------------------------------------
-  Design element          B2B image generation    B2C image generation
-  ----------------------- ----------------------- -----------------------
-  Primary focus           Business value          Product appeal
+ The entire creative direction changes depending on the audience, message, and marketing objective.
 
-  Visual concept          Metaphors and business  Product and lifestyle
-                          contexts                imagery
-
-  Imagery                 Conceptual, editorial,  Realistic, sensory,
-                          professional            product-focused
-
-  Colours                 Often restrained and    Often vibrant and
-                          brand-led               attention-grabbing
-
-  Typography              Professional and        Bold and expressive
-                          authoritative           
-
-  Messaging               Value proposition       Product benefits and
-                                                  offers
-
-  Emotional triggers      Confidence, trust and   Desire, excitement and
-                          credibility             urgency
-
-  CTA                     Discuss, explore,       Buy, order, book
-                          partner                 
-  -----------------------------------------------------------------------
+| Design element | B2B image generation | B2C image generation |
+| :--- | :--- | :--- |
+| **Primary focus** | Business value | Product appeal |
+| **Visual concept** | Metaphors and business contexts | Product and lifestyle imagery |
+| **Imagery** | Conceptual, editorial, professional | Realistic, sensory, product-focused |
+| **Colours** | Often restrained and brand-led | Often vibrant and attention-grabbing |
+| **Typography** | Professional and authoritative | Bold and expressive |
+| **Messaging** | Value proposition | Product benefits and offers |
+| **Emotional triggers** | Confidence, trust and credibility | Desire, excitement and urgency |
+| **CTA** | Discuss, explore, partner | Buy, order, book |
 
 These are common creative directions, not fixed rules. A B2B brand can
 use vibrant colours, and a B2C luxury brand can use minimalist visuals.
